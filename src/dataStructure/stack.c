@@ -1,0 +1,4 @@
+void push(void *item)
+{
+    ;
+}
