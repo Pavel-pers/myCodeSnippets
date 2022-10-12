@@ -4,7 +4,6 @@
 
 using ll = long long;
 
-
 struct BinUps
 {
     std::vector<std::vector<ll>> ej;
