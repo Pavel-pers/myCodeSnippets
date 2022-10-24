@@ -17,9 +17,3 @@ void printB(std::vector<std::pair<char,char>>a) {
             std::cout<<'\n';
     }
 }
-
-int toupper(int c)
-{}
-
-int isuuper(int c)
-{}
