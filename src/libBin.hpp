@@ -25,11 +25,11 @@ void bit(ll i, ll &val)
     val ^= (1LL << i);
 }
 
-ll mPw(ll val, int pw)
+ll func(ll val, int pw)
 {
     return val << pw;
 }
-ll dPw(ll val, ll pw)
+ll divBin(ll val, ll pw)
 {
     return val >> pw;
 }
@@ -38,7 +38,7 @@ ll k2(ll val)
 {
     return val << 1;
 }
-ll d2(ll val)
+ll divB(ll val)
 {
     return val >> 1;
 }
@@ -48,17 +48,17 @@ bool isD(ll val)
     return ~val & 1;
 }
 
-ll bin(ll pw)
+ll binPw(ll pw)
 {
     return (1LL << pw);
 }
 
-bool get(ll val, ll i)
+bool getB(ll val, ll i)
 {
     return (val >> i) & 1;
 }
 
-void k(ll &val, int i, bool b)
+void setBitI(ll &val, int i, bool b)
 {
-    val ^= (get(val, i) != b) << i;
+    val ^= (getB(val, i) != b) << i;
 }
